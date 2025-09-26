@@ -93,7 +93,7 @@ async def on_message(message: discord.Message):
             role = message.guild.get_role(role_id)
             embed = discord.Embed(
                 title=f"{rarity} Nomu Spawned!",
-                description=f"{role.mention}, prepare for battle!",
+                description=f"{role.mention}, time for battle!",
                 color=discord.Color.red()
             )
             await channel.send(content=f"{role.mention}", embed=embed)
@@ -107,7 +107,7 @@ async def on_message(message: discord.Message):
                     role = message.guild.get_role(role_id)
                     embed = discord.Embed(
                         title="Shop Spawned!",
-                        description=f"{role.mention}, check the shop now!",
+                        description=f"{role.mention}, time to use your money",
                         color=discord.Color.green()
                     )
                     await channel.send(content=f"{role.mention}", embed=embed)
