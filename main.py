@@ -22,7 +22,7 @@ def save_config(data):
 intents = discord.Intents.default()
 intents.messages = True
 intents.message_content = True
-client = commands.Bot(command_prefix="!", intents=intents)
+client = commands.Bot(command_prefix="/", intents=intents)
 
 HERO_TCG_ID = 1357752818068357330  # Hero TCG bot
 
